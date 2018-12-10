@@ -31,6 +31,7 @@
   }
 }
 
-.showGamesButton {
+
+button, input {
   font-size: 12px;
 }

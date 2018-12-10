@@ -19,26 +19,26 @@ export default class UserList extends Component {
 
     return (
       <div>
-        <h1>User List</h1>
+        <h2>User List</h2>
         <div>
             <button
             className='showGamesButton'
             onClick={toggleShowGamesPlayed}>
           {showGamesPlayed
-            ? `Hide the number of games played`
-            : `Show the number of games played`}
+            ? 'Hide' : 'Show' } the number of games played
         </button>
         </div>
         <ol>
-          {users.map(user => (
-            <User
-              key={user.username}
-              username={user.username}
-              numGamesPlayed={user.numGamesPlayed}
-              showGamesPlayed={showGamesPlayed}
-            />
-          ))}
-        </ol>
+        {users.map(user => 
+          <User
+            key={user.username}
+            username={user.username}
+            numGamesPlayed={user.numGamesPlayed}
+            showGamesPlayed={showGamesPlayed}
+          />
+        )}
+      </ol>
+
       </div>
     );
   }
