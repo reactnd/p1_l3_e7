@@ -30,3 +30,7 @@
     transform: rotate(360deg);
   }
 }
+
+.showGamesButton {
+  font-size: 12px;
+}
